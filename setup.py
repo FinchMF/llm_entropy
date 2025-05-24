@@ -13,11 +13,11 @@ setup(
         "pyyaml"
     ],
     author="Your Name",
-    author_email="your.email@example.com",
+    author_email="finchrmatthew@gmail.com",
     description="Analysis of LLM internal behavior through information-theoretic metrics",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/llm_entropy",
+    url="https://github.com/FinchMF/llm_entropy",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
