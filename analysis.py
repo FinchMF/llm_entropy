@@ -26,6 +26,8 @@ from .utils.metrics import (
     compute_attention_entropy,
     surprisal
 )
+from transformers import PreTrainedModel, PreTrainedTokenizer
+from typing import Dict, Any
 
 def gpt2_entropy_analysis(text, model, tokenizer, temperature=1.0, use_sampling=False):
     """Analyzes GPT-2 model's layer-wise behavior for the given text.
@@ -130,7 +132,14 @@ def gpt2_entropy_analysis(text, model, tokenizer, temperature=1.0, use_sampling=
         'token_trajectories': token_probs_by_layer
     }
 
-def bert_entropy_analysis(text, mask_index, model, tokenizer, temperature=1.0, use_sampling=False):
+def bert_entropy_analysis(
+    text: str,
+    model: PreTrainedModel,
+    tokenizer: PreTrainedTokenizer,
+    mask_index: int,
+    temperature: float = 1.0,
+    use_sampling: bool = False
+) -> Dict[str, Any]:
     """Analyzes BERT model's layer-wise behavior for masked token prediction.
 
     Similar to gpt2_entropy_analysis but focuses on the masked token position
@@ -138,9 +147,9 @@ def bert_entropy_analysis(text, mask_index, model, tokenizer, temperature=1.0, u
 
     Args:
         text (str): Input text containing a [MASK] token.
-        mask_index (int): Position of the [MASK] token in the sequence.
         model (BertForMaskedLM): Pre-trained BERT model.
         tokenizer (BertTokenizer): Associated BERT tokenizer.
+        mask_index (int): Position of the [MASK] token in the sequence.
         temperature (float, optional): Softmax temperature for predictions.
             Higher values produce more uniform distributions. Defaults to 1.0.
         use_sampling (bool, optional): Whether to use sampling for predictions
@@ -154,7 +163,6 @@ def bert_entropy_analysis(text, mask_index, model, tokenizer, temperature=1.0, u
         All metrics are computed for the masked token position, as this
         represents BERT's masked language modeling task.
     """
-    # Similar structure as gpt2_entropy_analysis but for BERT
     inputs = tokenizer(text, return_tensors="pt")
     with torch.no_grad():
         outputs = model(**inputs, output_attentions=True)

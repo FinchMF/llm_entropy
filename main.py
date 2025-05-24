@@ -1,7 +1,11 @@
 import os
 import logging
 import numpy as np
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import partial
+from typing import List, Tuple, Dict, Any
 from .utils.logging import setup_logging
+from .config import Config
 
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, BertTokenizer, BertForMaskedLM
 from llm_entropy.utils.sentence_generator import example_sentences
@@ -15,50 +19,138 @@ from . import (
     example_sentences
 )
 
-def run_analysis(num_sentences=10, temperature=1.0, use_sampling=False):
+class ModelManager:
+    def __init__(self):
+        self.models = {}
+        self.tokenizers = {}
+    
+    def get_model(self, model_name: str):
+        if model_name not in self.models:
+            max_retries = 3
+            for attempt in range(max_retries):
+                try:
+                    if model_name == "gpt2":
+                        self.models[model_name] = GPT2LMHeadModel.from_pretrained(model_name, output_hidden_states=True)
+                        self.tokenizers[model_name] = GPT2Tokenizer.from_pretrained(model_name)
+                    elif model_name == "bert":
+                        self.models[model_name] = BertForMaskedLM.from_pretrained("google-bert/bert-base-uncased", output_hidden_states=True)
+                        self.tokenizers[model_name] = BertTokenizer.from_pretrained("google-bert/bert-base-uncased")
+                    break
+                except Exception as e:
+                    if attempt == max_retries - 1:
+                        raise RuntimeError(f"Failed to load model {model_name} after {max_retries} attempts") from e
+                    logger.warning(f"Attempt {attempt + 1} failed, retrying...")
+        
+        return self.models[model_name], self.tokenizers[model_name]
+
+def process_batch(
+    sentences: List[str], 
+    model, 
+    tokenizer, 
+    analysis_func, 
+    analysis_type: str,  # Add analysis type parameter
+    batch_size: int = 8, 
+    **kwargs
+) -> List[Tuple[str, Dict]]:
+    """Process a batch of sentences with the given analysis function."""
+    results = []
+    for i in range(0, len(sentences), batch_size):
+        batch = sentences[i:i + batch_size]
+        # For BERT, we need to compute mask_index for each sentence
+        if analysis_type == 'bert':
+            batch_results = []
+            for sent in batch:
+                # Get mask index before calling analysis function
+                encoded = tokenizer(sent, return_tensors="pt")
+                mask_index = encoded["input_ids"].tolist()[0].index(tokenizer.mask_token_id)
+                # Pass parameters in correct order
+                result = analysis_func(
+                    text=sent,
+                    model=model,
+                    tokenizer=tokenizer,
+                    mask_index=mask_index,
+                    **kwargs
+                )
+                batch_results.append(result)
+        else:
+            batch_results = [
+                analysis_func(
+                    text=sent,
+                    model=model,
+                    tokenizer=tokenizer,
+                    **kwargs
+                ) for sent in batch
+            ]
+        results.extend(zip(batch, batch_results))
+    return results
+
+def run_analysis(num_sentences=10, temperature=1.0, use_sampling=False, batch_size=8, max_workers=4):
     """Run analysis on GPT-2 and BERT models."""
-    # Initialize logging
     run_id = setup_logging()
     logger = logging.getLogger('llm_entropy.analysis')
     
     logger.info(f"Starting analysis run {run_id}")
-    logger.info(f"Parameters: sentences={num_sentences}, temp={temperature}, sampling={use_sampling}")
-
+    
     try:
+        # Initialize model manager
+        model_manager = ModelManager()
+        
         # Load models
         logger.info("Loading models...")
-        gpt2_tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-        gpt2_model = GPT2LMHeadModel.from_pretrained("gpt2", output_hidden_states=True)
-        gpt2_model.eval()
-        logger.debug("GPT-2 model loaded successfully")
-
-        bert_tokenizer = BertTokenizer.from_pretrained("google-bert/bert-base-uncased")
-        bert_model = BertForMaskedLM.from_pretrained("google-bert/bert-base-uncased", output_hidden_states=True)
-        bert_model.eval()
-        logger.debug("BERT model loaded successfully")
-
+        gpt2_model, gpt2_tokenizer = model_manager.get_model("gpt2")
+        bert_model, bert_tokenizer = model_manager.get_model("bert")
+        
         # Generate sentences
         logger.info("Generating example sentences...")
         gpt2_sentences, bert_sentences = example_sentences(num_sentences)
-        logger.debug(f"Generated {len(gpt2_sentences)} sentences for each model")
-
-        # Run analyses
-        logger.info("Running GPT-2 analysis...")
-        gpt2_results = []
-        for i, sentence in enumerate(gpt2_sentences):
-            logger.debug(f"Analyzing GPT-2 sentence {i+1}/{len(gpt2_sentences)}")
-            results = gpt2_entropy_analysis(sentence, gpt2_model, gpt2_tokenizer, 
-                                         temperature=temperature, use_sampling=use_sampling)
-            gpt2_results.append((sentence, results))
-
-        logger.info("Running BERT analysis...")
-        bert_results = []
-        for i, sentence in enumerate(bert_sentences):
-            logger.debug(f"Analyzing BERT sentence {i+1}/{len(bert_sentences)}")
-            mask_index = bert_tokenizer(sentence, return_tensors="pt")["input_ids"].tolist()[0].index(bert_tokenizer.mask_token_id)
-            results = bert_entropy_analysis(sentence, mask_index, bert_model, bert_tokenizer,
-                                         temperature=temperature, use_sampling=use_sampling)
-            bert_results.append((sentence, results))
+        
+        # Prepare analysis functions with partial application
+        gpt2_analyze = partial(gpt2_entropy_analysis, 
+                             temperature=temperature, 
+                             use_sampling=use_sampling)
+        bert_analyze = partial(bert_entropy_analysis,
+                             temperature=temperature,
+                             use_sampling=use_sampling)
+        
+        # Run analyses in parallel
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            # Process GPT-2 sentences
+            gpt2_futures = [
+                executor.submit(
+                    process_batch, 
+                    gpt2_sentences[i:i + batch_size],
+                    gpt2_model,
+                    gpt2_tokenizer,
+                    gpt2_analyze,
+                    'gpt2',  # Add analysis type
+                    batch_size
+                )
+                for i in range(0, len(gpt2_sentences), batch_size)
+            ]
+            
+            # Process BERT sentences
+            bert_futures = [
+                executor.submit(
+                    process_batch,
+                    bert_sentences[i:i + batch_size],
+                    bert_model,
+                    bert_tokenizer,
+                    bert_analyze,
+                    'bert',  # Add analysis type
+                    batch_size
+                )
+                for i in range(0, len(bert_sentences), batch_size)
+            ]
+            
+            # Collect results
+            gpt2_results = []
+            bert_results = []
+            
+            for future in as_completed(gpt2_futures):
+                gpt2_results.extend(future.result())
+            
+            for future in as_completed(bert_futures):
+                bert_results.extend(future.result())
 
         # Generate outputs
         logger.info("Generating plots and saving results...")
@@ -116,6 +208,11 @@ def run_analysis(num_sentences=10, temperature=1.0, use_sampling=False):
     except Exception as e:
         logger.error(f"Analysis failed: {str(e)}", exc_info=True)
         raise
+    finally:
+        # Cleanup
+        if 'model_manager' in locals():
+            del model_manager.models
+            del model_manager.tokenizers
 
     return {
         'run_id': run_id,

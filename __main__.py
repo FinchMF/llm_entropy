@@ -22,9 +22,9 @@ def main():
     
     # Command line args override config file
     run_params = {
-        'num_sentences': args.num_sentences or config['analysis']['num_sentences'],
-        'temperature': args.temperature or config['analysis']['temperature'],
-        'use_sampling': args.use_sampling or config['analysis']['use_sampling']
+        'num_sentences': args.num_sentences or config.analysis.num_sentences,
+        'temperature': args.temperature or config.analysis.temperature,
+        'use_sampling': args.use_sampling or config.analysis.use_sampling
     }
     
     run_analysis(**run_params)

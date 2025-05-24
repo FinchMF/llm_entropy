@@ -5,16 +5,21 @@ Python package analyzing GPT-2 and BERT internal behavior through information-th
 ## Installation
 
 ```bash
+git clone https://github.com/FinchMF/llm_entropy.git
+cd llm_entropy
 pip install -e .
-pip install torch transformers 'numpy<2.0' matplotlib pandas pyyaml
+pip install -r requirements.txt
 ```
 
 ## Usage
 
 ### CLI
 ```bash
+# default
 python -m llm_entropy
+# override
 python -m llm_entropy --num-sentences 20 --temperature 0.8 --use-sampling
+# configuration
 python -m llm_entropy --config path/to/config.yaml
 ```
 
