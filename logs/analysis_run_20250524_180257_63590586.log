@@ -1,0 +1,31 @@
+2025-05-24 18:02:57,815 - llm_entropy.analysis - INFO - Starting analysis run 20250524_180257_63590586
+2025-05-24 18:02:57,815 - llm_entropy.analysis - INFO - Parameters: sentences=10, temp=1.0, sampling=False
+2025-05-24 18:02:57,816 - llm_entropy.analysis - INFO - Loading models...
+2025-05-24 18:02:58,400 - llm_entropy.analysis - DEBUG - GPT-2 model loaded successfully
+2025-05-24 18:02:58,867 - llm_entropy.analysis - DEBUG - BERT model loaded successfully
+2025-05-24 18:02:58,867 - llm_entropy.analysis - INFO - Generating example sentences...
+2025-05-24 18:02:58,895 - llm_entropy.analysis - DEBUG - Generated 10 sentences for each model
+2025-05-24 18:02:58,895 - llm_entropy.analysis - INFO - Running GPT-2 analysis...
+2025-05-24 18:02:58,896 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 1/10
+2025-05-24 18:02:59,859 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 2/10
+2025-05-24 18:03:00,199 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 3/10
+2025-05-24 18:03:00,548 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 4/10
+2025-05-24 18:03:00,895 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 5/10
+2025-05-24 18:03:01,249 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 6/10
+2025-05-24 18:03:01,600 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 7/10
+2025-05-24 18:03:01,945 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 8/10
+2025-05-24 18:03:02,292 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 9/10
+2025-05-24 18:03:02,660 - llm_entropy.analysis - DEBUG - Analyzing GPT-2 sentence 10/10
+2025-05-24 18:03:03,007 - llm_entropy.analysis - INFO - Running BERT analysis...
+2025-05-24 18:03:03,007 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 1/10
+2025-05-24 18:03:03,306 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 2/10
+2025-05-24 18:03:03,587 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 3/10
+2025-05-24 18:03:03,856 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 4/10
+2025-05-24 18:03:04,125 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 5/10
+2025-05-24 18:03:04,402 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 6/10
+2025-05-24 18:03:04,673 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 7/10
+2025-05-24 18:03:04,965 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 8/10
+2025-05-24 18:03:05,278 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 9/10
+2025-05-24 18:03:05,572 - llm_entropy.analysis - DEBUG - Analyzing BERT sentence 10/10
+2025-05-24 18:03:05,852 - llm_entropy.analysis - INFO - Generating plots and saving results...
+2025-05-24 18:03:08,578 - llm_entropy.analysis - INFO - Analysis run 20250524_180257_63590586 completed successfully

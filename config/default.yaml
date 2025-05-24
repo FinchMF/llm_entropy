@@ -1,0 +1,19 @@
+# Analysis parameters
+analysis:
+  num_sentences: 10
+  temperature: 1.0
+  use_sampling: false
+
+# Model parameters
+models:
+  gpt2:
+    name: "gpt2"
+    output_hidden_states: true
+  bert:
+    name: "google-bert/bert-base-uncased"
+    output_hidden_states: true
+
+# Output paths
+output:
+  plots_dir: "plots"
+  results_dir: "results"
