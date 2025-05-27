@@ -2,14 +2,62 @@
 
 import os
 import yaml
-from typing import Dict, Any, Optional
+import torch
+from typing import Dict, Any, Optional, List
 from dataclasses import dataclass
 
 @dataclass
+class ControlConfig:
+    enabled: bool = False
+    layer_weights: Optional[List[float]] = None
+    token_weights: Optional[List[float]] = None
+    control_vectors: Optional[Dict[str, List[float]]] = None
+
+    def to_tensors(self) -> Dict[str, torch.Tensor]:
+        """Convert config values to tensors and expand control vectors."""
+        if not self.control_vectors:
+            return {'control_vector': None, 'layer_weights': None, 'token_weights': None}
+
+        # Expand control vector to match model hidden size (768)
+        pos_vector = self.control_vectors['positive']
+        hidden_size = 768  # GPT-2's hidden size
+        
+        if len(pos_vector) < hidden_size:
+            # Repeat the pattern to fill the vector
+            pos_vector = pos_vector * (hidden_size // len(pos_vector) + 1)
+            pos_vector = pos_vector[:hidden_size]  # Trim to exact size
+
+        return {
+            'control_vector': torch.tensor(pos_vector),
+            'layer_weights': torch.tensor(self.layer_weights) if self.layer_weights else None,
+            'token_weights': torch.tensor(self.token_weights) if self.token_weights else None
+        }
+
+@dataclass
 class AnalysisConfig:
+    num_sentences: int = 10
     temperature: float = 1.0
     use_sampling: bool = False
-    num_sentences: int = 10
+    compare_control: bool = False  # Add compare_control field
+    control: Optional[ControlConfig] = None
+
+    @classmethod
+    def from_dict(cls, d: Dict[str, Any]) -> 'AnalysisConfig':
+        if 'control' in d:
+            d['control'] = ControlConfig(**d['control'])
+        return cls(**d)
+
+@dataclass
+class ModelConfig:
+    name: str
+    output_hidden_states: bool = True
+    control_dimension: Optional[int] = None
+
+@dataclass
+class OutputConfig:
+    plots_dir: str = "plots"
+    results_dir: str = "results"
+    control_vectors_dir: Optional[str] = None
 
 @dataclass
 class Config:
@@ -21,8 +69,17 @@ class Config:
     cache_dir: str = ".cache"
     output_dir: str = "outputs"
     
-    # Analysis settings
+    # Component configurations
     analysis: AnalysisConfig = AnalysisConfig()
+    models: Dict[str, ModelConfig] = None
+    output: OutputConfig = OutputConfig()
+    
+    def __post_init__(self):
+        if self.models is None:
+            self.models = {
+                'gpt2': ModelConfig(name='gpt2'),
+                'bert': ModelConfig(name='google-bert/bert-base-uncased')
+            }
     
     @classmethod
     def from_yaml(cls, config_path: str) -> 'Config':
@@ -32,12 +89,23 @@ class Config:
         with open(config_path, 'r') as f:
             config_dict = yaml.safe_load(f)
         
-        # Handle nested analysis config
-        if 'analysis' in config_dict:
-            analysis_dict = config_dict.pop('analysis')
-            config_dict['analysis'] = AnalysisConfig(**analysis_dict)
-            
-        return cls(**config_dict)
+        # Process nested configurations
+        analysis_dict = config_dict.pop('analysis', {})
+        models_dict = config_dict.pop('models', {})
+        output_dict = config_dict.pop('output', {})
+        
+        # Create component configs
+        analysis_config = AnalysisConfig.from_dict(analysis_dict)
+        models_config = {name: ModelConfig(**model_dict) 
+                        for name, model_dict in models_dict.items()}
+        output_config = OutputConfig(**output_dict)
+        
+        return cls(
+            **config_dict,
+            analysis=analysis_config,
+            models=models_config,
+            output=output_config
+        )
     
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -86,7 +154,14 @@ def load_config(config_path: Optional[str] = None) -> Config:
     
     if config_path and os.path.exists(config_path):
         try:
-            return Config.from_yaml(config_path)
+            config = Config.from_yaml(config_path)
+            
+            # Convert control parameters to tensors if enabled
+            if config.analysis.control and config.analysis.control.enabled:
+                tensors = config.analysis.control.to_tensors()
+                config.control_tensors = tensors
+            
+            return config
         except Exception as e:
             raise ValueError(f"Failed to load config from {config_path}: {str(e)}")
     

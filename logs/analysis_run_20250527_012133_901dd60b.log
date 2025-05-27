@@ -1,0 +1,530 @@
+2025-05-27 01:21:33,640 - llm_entropy.results - INFO - Setting up directory structure in: analysis_outputs/run_20250527_012133_901dd60b
+2025-05-27 01:21:33,641 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:21:33,641 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/standard/plots
+2025-05-27 01:21:33,641 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/standard/predictions
+2025-05-27 01:21:33,641 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:21:33,641 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/control/plots
+2025-05-27 01:21:33,641 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/control/predictions
+2025-05-27 01:21:33,642 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:21:33,642 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/plots
+2025-05-27 01:21:33,642 - llm_entropy.results - INFO - Created directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/predictions
+2025-05-27 01:21:33,642 - llm_entropy.analysis - INFO - Starting analysis run 20250527_012133_901dd60b in comparative mode
+2025-05-27 01:21:33,642 - llm_entropy.analysis - INFO - Loading models...
+2025-05-27 01:21:37,270 - llm_entropy.analysis - INFO - Generating example sentences...
+2025-05-27 01:21:37,298 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: The unique placeholder 99 is...
+2025-05-27 01:21:37,298 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: The unique placeholder 112 is...
+2025-05-27 01:21:37,299 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 110....
+2025-05-27 01:21:37,299 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:37,300 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 118....
+2025-05-27 01:21:37,300 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:37,300 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:37,301 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:38,257 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:38,270 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:38,346 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:38,377 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:40,287 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:40,288 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: The Entity190 is a landmark in...
+2025-05-27 01:21:40,288 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:40,377 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:40,377 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: The Particle Physics is a beacon of...
+2025-05-27 01:21:40,378 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:40,415 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:40,417 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 90....
+2025-05-27 01:21:40,417 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:40,417 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:40,420 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 59....
+2025-05-27 01:21:40,420 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:41,378 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:41,387 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:41,450 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:41,468 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:43,393 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:43,400 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:43,404 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 174....
+2025-05-27 01:21:43,404 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:43,597 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:43,597 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: The unique placeholder 163 is...
+2025-05-27 01:21:43,597 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:43,820 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:44,167 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:44,255 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:45,505 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:45,506 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 179....
+2025-05-27 01:21:45,506 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:45,519 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:45,519 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: Entity89 revolutionized the field of...
+2025-05-27 01:21:45,519 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:46,133 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:46,191 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:47,463 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:47,464 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: [MASK] contributed to distributed processing....
+2025-05-27 01:21:47,464 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:47,637 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:47,637 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: The integration of Entity135 improved...
+2025-05-27 01:21:47,637 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:47,991 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:48,296 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:49,036 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:49,037 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 102....
+2025-05-27 01:21:49,037 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:49,638 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:49,638 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: The unique placeholder 136 is...
+2025-05-27 01:21:49,638 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:49,646 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:50,246 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:50,923 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:50,924 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 186....
+2025-05-27 01:21:50,925 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:51,570 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:51,570 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: The architecture of Entity52 allows...
+2025-05-27 01:21:51,571 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:51,575 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:52,219 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:52,865 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:52,866 - llm_entropy.analysis - INFO - Running comparative analysis for bert on: The [MASK] is a unique example of 51....
+2025-05-27 01:21:52,867 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:53,490 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:53,527 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:53,527 - llm_entropy.analysis - INFO - Running comparative analysis for gpt2 on: Renewable is a cradle of...
+2025-05-27 01:21:53,527 - llm_entropy.analysis - INFO - Running base analysis...
+2025-05-27 01:21:54,164 - llm_entropy.analysis - INFO - Running control analysis...
+2025-05-27 01:21:54,709 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:55,323 - llm_entropy.analysis - INFO - Comparative analysis complete.
+2025-05-27 01:21:55,324 - llm_entropy.analysis - INFO - Generating plots and saving results...
+2025-05-27 01:21:55,324 - llm_entropy.analysis - INFO - Saving analysis results...
+2025-05-27 01:21:55,324 - llm_entropy.results - INFO - 
+Processing gpt2 results in comparative mode
+2025-05-27 01:21:55,324 - llm_entropy.results - INFO - Base directory: analysis_outputs/run_20250527_012133_901dd60b
+2025-05-27 01:21:55,324 - llm_entropy.results - INFO - 
+Saving standard analysis for gpt2
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: The unique placeholder 112 is...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: The Particle Physics is a beac...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: The unique placeholder 99 is...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: The Entity190 is a landmark in...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: The unique placeholder 163 is...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: Entity89 revolutionized the fi...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: The integration of Entity135 i...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: The unique placeholder 136 is...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: The architecture of Entity52 a...
+2025-05-27 01:21:55,325 - llm_entropy.results - DEBUG - Found direct predictions for: Renewable is a cradle of...
+2025-05-27 01:21:55,325 - llm_entropy.results - INFO - Extracted 10 prediction sets
+2025-05-27 01:21:55,326 - llm_entropy.results - INFO - Saving 10 predictions to analysis_outputs/run_20250527_012133_901dd60b/standard/predictions/gpt2_predictions.csv
+2025-05-27 01:21:55,328 - llm_entropy.results - INFO - Successfully saved predictions to analysis_outputs/run_20250527_012133_901dd60b/standard/predictions/gpt2_predictions.csv
+2025-05-27 01:21:55,328 - llm_entropy.results - INFO - Found metrics: ['layer_entropies', 'layer_perplexities', 'layer_margins', 'layer_kl_divs', 'layer_attn_entropies', 'layer_surprisals']
+2025-05-27 01:21:55,328 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:55,329 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:55,329 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:55,329 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:55,329 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:55,329 - llm_entropy.validator - INFO -   - Size: 3004 bytes
+2025-05-27 01:21:55,329 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:21:55,330 - llm_entropy.results - INFO - Saved layer_entropies data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:55,330 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:55,330 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:55,330 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:55,330 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:55,330 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:55,330 - llm_entropy.validator - INFO -   - Size: 2492 bytes
+2025-05-27 01:21:55,331 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:21:55,331 - llm_entropy.results - INFO - Saved layer_perplexities data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:55,331 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_margins.csv
+2025-05-27 01:21:55,331 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_margins.csv
+2025-05-27 01:21:55,331 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_margins.csv
+2025-05-27 01:21:55,331 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:55,331 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_margins.csv
+2025-05-27 01:21:55,331 - llm_entropy.validator - INFO -   - Size: 2743 bytes
+2025-05-27 01:21:55,332 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:21:55,332 - llm_entropy.results - INFO - Saved layer_margins data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_margins.csv
+2025-05-27 01:21:55,332 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:55,332 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:55,332 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:55,332 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:55,332 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:55,333 - llm_entropy.validator - INFO -   - Size: 2781 bytes
+2025-05-27 01:21:55,333 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:21:55,333 - llm_entropy.results - INFO - Saved layer_kl_divs data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:55,333 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:55,333 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:55,333 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:55,333 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:55,334 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:55,334 - llm_entropy.validator - INFO -   - Size: 2649 bytes
+2025-05-27 01:21:55,334 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:21:55,334 - llm_entropy.results - INFO - Saved layer_attn_entropies data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:55,334 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:55,334 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:55,334 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:55,335 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:55,335 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:55,335 - llm_entropy.validator - INFO -   - Size: 2725 bytes
+2025-05-27 01:21:55,335 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:21:55,335 - llm_entropy.results - INFO - Saved layer_surprisals data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:55,335 - llm_entropy.results - INFO - Generating plot for layer_entropies
+2025-05-27 01:21:56,159 - llm_entropy.results - INFO - Successfully generated plot for layer_entropies
+2025-05-27 01:21:56,159 - llm_entropy.results - INFO - Generating plot for layer_perplexities
+2025-05-27 01:21:56,917 - llm_entropy.results - INFO - Successfully generated plot for layer_perplexities
+2025-05-27 01:21:56,917 - llm_entropy.results - INFO - Generating plot for layer_margins
+2025-05-27 01:21:57,738 - llm_entropy.results - INFO - Successfully generated plot for layer_margins
+2025-05-27 01:21:57,738 - llm_entropy.results - INFO - Generating plot for layer_kl_divs
+2025-05-27 01:21:58,479 - llm_entropy.results - INFO - Successfully generated plot for layer_kl_divs
+2025-05-27 01:21:58,479 - llm_entropy.results - INFO - Generating plot for layer_attn_entropies
+2025-05-27 01:21:58,489 - llm_entropy.results - WARNING - Could not generate plot for layer_attn_entropies: Failed to compute statistics: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+2025-05-27 01:21:58,490 - llm_entropy.results - INFO - Generating plot for layer_surprisals
+2025-05-27 01:21:59,249 - llm_entropy.results - INFO - Successfully generated plot for layer_surprisals
+2025-05-27 01:21:59,250 - llm_entropy.results - INFO - 
+Saving control analysis for gpt2
+2025-05-27 01:21:59,250 - llm_entropy.results - DEBUG - Found base predictions for: The unique placeholder 112 is...
+2025-05-27 01:21:59,250 - llm_entropy.results - DEBUG - Found control predictions for: The unique placeholder 112 is...
+2025-05-27 01:21:59,250 - llm_entropy.results - DEBUG - Found base predictions for: The Particle Physics is a beac...
+2025-05-27 01:21:59,250 - llm_entropy.results - DEBUG - Found control predictions for: The Particle Physics is a beac...
+2025-05-27 01:21:59,250 - llm_entropy.results - DEBUG - Found base predictions for: The unique placeholder 99 is...
+2025-05-27 01:21:59,250 - llm_entropy.results - DEBUG - Found control predictions for: The unique placeholder 99 is...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found base predictions for: The Entity190 is a landmark in...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found control predictions for: The Entity190 is a landmark in...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found base predictions for: The unique placeholder 163 is...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found control predictions for: The unique placeholder 163 is...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found base predictions for: Entity89 revolutionized the fi...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found control predictions for: Entity89 revolutionized the fi...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found base predictions for: The integration of Entity135 i...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found control predictions for: The integration of Entity135 i...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found base predictions for: The unique placeholder 136 is...
+2025-05-27 01:21:59,251 - llm_entropy.results - DEBUG - Found control predictions for: The unique placeholder 136 is...
+2025-05-27 01:21:59,252 - llm_entropy.results - DEBUG - Found base predictions for: The architecture of Entity52 a...
+2025-05-27 01:21:59,252 - llm_entropy.results - DEBUG - Found control predictions for: The architecture of Entity52 a...
+2025-05-27 01:21:59,252 - llm_entropy.results - DEBUG - Found base predictions for: Renewable is a cradle of...
+2025-05-27 01:21:59,252 - llm_entropy.results - DEBUG - Found control predictions for: Renewable is a cradle of...
+2025-05-27 01:21:59,252 - llm_entropy.results - INFO - Extracted 20 prediction sets
+2025-05-27 01:21:59,252 - llm_entropy.results - INFO - Saving 20 predictions to analysis_outputs/run_20250527_012133_901dd60b/control/predictions/gpt2_predictions.csv
+2025-05-27 01:21:59,253 - llm_entropy.results - INFO - Successfully saved predictions to analysis_outputs/run_20250527_012133_901dd60b/control/predictions/gpt2_predictions.csv
+2025-05-27 01:21:59,254 - llm_entropy.results - INFO - Found metrics: ['layer_entropies', 'layer_perplexities', 'layer_margins', 'layer_kl_divs', 'layer_attn_entropies', 'layer_surprisals']
+2025-05-27 01:21:59,254 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:59,254 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:59,254 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:59,254 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:59,254 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO -   - Size: 3022 bytes
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:21:59,255 - llm_entropy.results - INFO - Saved layer_entropies data to analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_entropies.csv
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO -   - Size: 2643 bytes
+2025-05-27 01:21:59,255 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:21:59,255 - llm_entropy.results - INFO - Saved layer_perplexities data to analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_perplexities.csv
+2025-05-27 01:21:59,256 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_margins.csv
+2025-05-27 01:21:59,256 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_margins.csv
+2025-05-27 01:21:59,256 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_margins.csv
+2025-05-27 01:21:59,256 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:59,256 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_margins.csv
+2025-05-27 01:21:59,256 - llm_entropy.validator - INFO -   - Size: 2729 bytes
+2025-05-27 01:21:59,256 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:21:59,256 - llm_entropy.results - INFO - Saved layer_margins data to analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_margins.csv
+2025-05-27 01:21:59,256 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO -   - Size: 2774 bytes
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:21:59,257 - llm_entropy.results - INFO - Saved layer_kl_divs data to analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_kl_divs.csv
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:59,257 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO -   - Size: 988 bytes
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:21:59,258 - llm_entropy.results - INFO - Saved layer_attn_entropies data to analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_attn_entropies.csv
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO -   - Size: 2709 bytes
+2025-05-27 01:21:59,258 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:21:59,259 - llm_entropy.results - INFO - Saved layer_surprisals data to analysis_outputs/run_20250527_012133_901dd60b/control/data/gpt2_layer_surprisals.csv
+2025-05-27 01:21:59,259 - llm_entropy.results - INFO - Generating plot for layer_entropies
+2025-05-27 01:22:00,064 - llm_entropy.results - INFO - Successfully generated plot for layer_entropies
+2025-05-27 01:22:00,064 - llm_entropy.results - INFO - Generating plot for layer_perplexities
+2025-05-27 01:22:00,862 - llm_entropy.results - INFO - Successfully generated plot for layer_perplexities
+2025-05-27 01:22:00,862 - llm_entropy.results - INFO - Generating plot for layer_margins
+2025-05-27 01:22:01,655 - llm_entropy.results - INFO - Successfully generated plot for layer_margins
+2025-05-27 01:22:01,655 - llm_entropy.results - INFO - Generating plot for layer_kl_divs
+2025-05-27 01:22:02,462 - llm_entropy.results - INFO - Successfully generated plot for layer_kl_divs
+2025-05-27 01:22:02,462 - llm_entropy.results - INFO - Generating plot for layer_attn_entropies
+2025-05-27 01:22:02,472 - llm_entropy.results - WARNING - Could not generate plot for layer_attn_entropies: Failed to compute statistics: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+2025-05-27 01:22:02,472 - llm_entropy.results - INFO - Generating plot for layer_surprisals
+2025-05-27 01:22:03,247 - llm_entropy.results - INFO - Successfully generated plot for layer_surprisals
+2025-05-27 01:22:03,248 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_entropies_comparative.csv
+2025-05-27 01:22:03,249 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_entropies_comparative.csv
+2025-05-27 01:22:03,249 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_entropies_comparative.csv
+2025-05-27 01:22:03,249 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:03,249 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_entropies_comparative.csv
+2025-05-27 01:22:03,249 - llm_entropy.validator - INFO -   - Size: 7781 bytes
+2025-05-27 01:22:03,250 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:03,250 - llm_entropy.results - INFO - Saved comparative data for layer_entropies
+2025-05-27 01:22:03,959 - llm_entropy.results - INFO - Generated comparison plot for layer_entropies
+2025-05-27 01:22:03,959 - llm_entropy.results - ERROR - Failed to generate plots for layer_entropies: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:03,960 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_perplexities_comparative.csv
+2025-05-27 01:22:03,961 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_perplexities_comparative.csv
+2025-05-27 01:22:03,961 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_perplexities_comparative.csv
+2025-05-27 01:22:03,961 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:03,961 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_perplexities_comparative.csv
+2025-05-27 01:22:03,961 - llm_entropy.validator - INFO -   - Size: 7075 bytes
+2025-05-27 01:22:03,961 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:03,962 - llm_entropy.results - INFO - Saved comparative data for layer_perplexities
+2025-05-27 01:22:04,660 - llm_entropy.results - INFO - Generated comparison plot for layer_perplexities
+2025-05-27 01:22:04,661 - llm_entropy.results - ERROR - Failed to generate plots for layer_perplexities: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:04,661 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_margins_comparative.csv
+2025-05-27 01:22:04,662 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_margins_comparative.csv
+2025-05-27 01:22:04,662 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_margins_comparative.csv
+2025-05-27 01:22:04,663 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:04,663 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_margins_comparative.csv
+2025-05-27 01:22:04,663 - llm_entropy.validator - INFO -   - Size: 6980 bytes
+2025-05-27 01:22:04,663 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:04,663 - llm_entropy.results - INFO - Saved comparative data for layer_margins
+2025-05-27 01:22:05,412 - llm_entropy.results - INFO - Generated comparison plot for layer_margins
+2025-05-27 01:22:05,412 - llm_entropy.results - ERROR - Failed to generate plots for layer_margins: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:05,412 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_kl_divs_comparative.csv
+2025-05-27 01:22:05,413 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_kl_divs_comparative.csv
+2025-05-27 01:22:05,413 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_kl_divs_comparative.csv
+2025-05-27 01:22:05,413 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:05,413 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_kl_divs_comparative.csv
+2025-05-27 01:22:05,414 - llm_entropy.validator - INFO -   - Size: 7161 bytes
+2025-05-27 01:22:05,414 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:05,414 - llm_entropy.results - INFO - Saved comparative data for layer_kl_divs
+2025-05-27 01:22:06,211 - llm_entropy.results - INFO - Generated comparison plot for layer_kl_divs
+2025-05-27 01:22:06,211 - llm_entropy.results - ERROR - Failed to generate plots for layer_kl_divs: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:06,211 - llm_entropy.results - WARNING - No valid comparison pairs for layer_attn_entropies
+2025-05-27 01:22:06,212 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_surprisals_comparative.csv
+2025-05-27 01:22:06,212 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_surprisals_comparative.csv
+2025-05-27 01:22:06,212 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_surprisals_comparative.csv
+2025-05-27 01:22:06,212 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:06,213 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/gpt2_layer_surprisals_comparative.csv
+2025-05-27 01:22:06,213 - llm_entropy.validator - INFO -   - Size: 6820 bytes
+2025-05-27 01:22:06,213 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:06,213 - llm_entropy.results - INFO - Saved comparative data for layer_surprisals
+2025-05-27 01:22:06,979 - llm_entropy.results - INFO - Generated comparison plot for layer_surprisals
+2025-05-27 01:22:06,979 - llm_entropy.results - ERROR - Failed to generate plots for layer_surprisals: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:06,980 - llm_entropy.results - INFO - Saved comparative predictions to analysis_outputs/run_20250527_012133_901dd60b/comparative/predictions/gpt2_comparative_predictions.csv
+2025-05-27 01:22:06,981 - llm_entropy.results - INFO - 
+Processing bert results in comparative mode
+2025-05-27 01:22:06,981 - llm_entropy.results - INFO - Base directory: analysis_outputs/run_20250527_012133_901dd60b
+2025-05-27 01:22:06,981 - llm_entropy.results - INFO - 
+Saving standard analysis for bert
+2025-05-27 01:22:06,981 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,981 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,981 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,981 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,981 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,982 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,982 - llm_entropy.results - DEBUG - Found direct predictions for: [MASK] contributed to distribu...
+2025-05-27 01:22:06,982 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,982 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,982 - llm_entropy.results - DEBUG - Found direct predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:06,982 - llm_entropy.results - INFO - Extracted 10 prediction sets
+2025-05-27 01:22:06,982 - llm_entropy.results - INFO - Saving 10 predictions to analysis_outputs/run_20250527_012133_901dd60b/standard/predictions/bert_predictions.csv
+2025-05-27 01:22:06,985 - llm_entropy.results - INFO - Successfully saved predictions to analysis_outputs/run_20250527_012133_901dd60b/standard/predictions/bert_predictions.csv
+2025-05-27 01:22:06,985 - llm_entropy.results - INFO - Found metrics: ['layer_entropies', 'layer_perplexities', 'layer_margins', 'layer_kl_divs', 'layer_attn_entropies', 'layer_surprisals']
+2025-05-27 01:22:06,985 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_entropies.csv
+2025-05-27 01:22:06,986 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_entropies.csv
+2025-05-27 01:22:06,986 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_entropies.csv
+2025-05-27 01:22:06,986 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:06,986 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_entropies.csv
+2025-05-27 01:22:06,987 - llm_entropy.validator - INFO -   - Size: 2861 bytes
+2025-05-27 01:22:06,987 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:22:06,987 - llm_entropy.results - INFO - Saved layer_entropies data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_entropies.csv
+2025-05-27 01:22:06,987 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_perplexities.csv
+2025-05-27 01:22:06,987 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_perplexities.csv
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_perplexities.csv
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_perplexities.csv
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO -   - Size: 2637 bytes
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:22:06,988 - llm_entropy.results - INFO - Saved layer_perplexities data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_perplexities.csv
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_margins.csv
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_margins.csv
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_margins.csv
+2025-05-27 01:22:06,988 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_margins.csv
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO -   - Size: 2822 bytes
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:22:06,989 - llm_entropy.results - INFO - Saved layer_margins data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_margins.csv
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO -   - Size: 2851 bytes
+2025-05-27 01:22:06,989 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:22:06,990 - llm_entropy.results - INFO - Saved layer_kl_divs data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:06,990 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:06,990 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:06,990 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:06,990 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:06,990 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:06,990 - llm_entropy.validator - INFO -   - Size: 2716 bytes
+2025-05-27 01:22:06,990 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:22:06,990 - llm_entropy.results - INFO - Saved layer_attn_entropies data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:06,991 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_surprisals.csv
+2025-05-27 01:22:06,991 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_surprisals.csv
+2025-05-27 01:22:06,991 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_surprisals.csv
+2025-05-27 01:22:06,991 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:06,991 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_surprisals.csv
+2025-05-27 01:22:06,991 - llm_entropy.validator - INFO -   - Size: 2767 bytes
+2025-05-27 01:22:06,991 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/standard/data
+2025-05-27 01:22:06,991 - llm_entropy.results - INFO - Saved layer_surprisals data to analysis_outputs/run_20250527_012133_901dd60b/standard/data/bert_layer_surprisals.csv
+2025-05-27 01:22:06,991 - llm_entropy.results - INFO - Generating plot for layer_entropies
+2025-05-27 01:22:07,747 - llm_entropy.results - INFO - Successfully generated plot for layer_entropies
+2025-05-27 01:22:07,748 - llm_entropy.results - INFO - Generating plot for layer_perplexities
+2025-05-27 01:22:08,504 - llm_entropy.results - INFO - Successfully generated plot for layer_perplexities
+2025-05-27 01:22:08,505 - llm_entropy.results - INFO - Generating plot for layer_margins
+2025-05-27 01:22:09,275 - llm_entropy.results - INFO - Successfully generated plot for layer_margins
+2025-05-27 01:22:09,275 - llm_entropy.results - INFO - Generating plot for layer_kl_divs
+2025-05-27 01:22:10,009 - llm_entropy.results - INFO - Successfully generated plot for layer_kl_divs
+2025-05-27 01:22:10,010 - llm_entropy.results - INFO - Generating plot for layer_attn_entropies
+2025-05-27 01:22:10,020 - llm_entropy.results - WARNING - Could not generate plot for layer_attn_entropies: Failed to compute statistics: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+2025-05-27 01:22:10,020 - llm_entropy.results - INFO - Generating plot for layer_surprisals
+2025-05-27 01:22:10,784 - llm_entropy.results - INFO - Successfully generated plot for layer_surprisals
+2025-05-27 01:22:10,784 - llm_entropy.results - INFO - 
+Saving control analysis for bert
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,785 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found base predictions for: [MASK] contributed to distribu...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found control predictions for: [MASK] contributed to distribu...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found base predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,786 - llm_entropy.results - DEBUG - Found control predictions for: The [MASK] is a unique example...
+2025-05-27 01:22:10,786 - llm_entropy.results - INFO - Extracted 20 prediction sets
+2025-05-27 01:22:10,787 - llm_entropy.results - INFO - Saving 20 predictions to analysis_outputs/run_20250527_012133_901dd60b/control/predictions/bert_predictions.csv
+2025-05-27 01:22:10,788 - llm_entropy.results - INFO - Successfully saved predictions to analysis_outputs/run_20250527_012133_901dd60b/control/predictions/bert_predictions.csv
+2025-05-27 01:22:10,788 - llm_entropy.results - INFO - Found metrics: ['layer_entropies', 'layer_perplexities', 'layer_margins', 'layer_kl_divs', 'layer_attn_entropies', 'layer_surprisals']
+2025-05-27 01:22:10,789 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_entropies.csv
+2025-05-27 01:22:10,789 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_entropies.csv
+2025-05-27 01:22:10,789 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_entropies.csv
+2025-05-27 01:22:10,789 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:10,789 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_entropies.csv
+2025-05-27 01:22:10,790 - llm_entropy.validator - INFO -   - Size: 3192 bytes
+2025-05-27 01:22:10,790 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:22:10,790 - llm_entropy.results - INFO - Saved layer_entropies data to analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_entropies.csv
+2025-05-27 01:22:10,790 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_perplexities.csv
+2025-05-27 01:22:10,790 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_perplexities.csv
+2025-05-27 01:22:10,791 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_perplexities.csv
+2025-05-27 01:22:10,791 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:10,791 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_perplexities.csv
+2025-05-27 01:22:10,791 - llm_entropy.validator - INFO -   - Size: 2845 bytes
+2025-05-27 01:22:10,791 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:22:10,791 - llm_entropy.results - INFO - Saved layer_perplexities data to analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_perplexities.csv
+2025-05-27 01:22:10,791 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_margins.csv
+2025-05-27 01:22:10,792 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_margins.csv
+2025-05-27 01:22:10,792 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_margins.csv
+2025-05-27 01:22:10,792 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:10,792 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_margins.csv
+2025-05-27 01:22:10,792 - llm_entropy.validator - INFO -   - Size: 2786 bytes
+2025-05-27 01:22:10,792 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:22:10,792 - llm_entropy.results - INFO - Saved layer_margins data to analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_margins.csv
+2025-05-27 01:22:10,792 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:10,793 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:10,793 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:10,793 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:10,793 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:10,793 - llm_entropy.validator - INFO -   - Size: 2839 bytes
+2025-05-27 01:22:10,793 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:22:10,793 - llm_entropy.results - INFO - Saved layer_kl_divs data to analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_kl_divs.csv
+2025-05-27 01:22:10,793 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:10,794 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:10,794 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:10,794 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:10,794 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:10,794 - llm_entropy.validator - INFO -   - Size: 1060 bytes
+2025-05-27 01:22:10,794 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:22:10,794 - llm_entropy.results - INFO - Saved layer_attn_entropies data to analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_attn_entropies.csv
+2025-05-27 01:22:10,794 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_surprisals.csv
+2025-05-27 01:22:10,795 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_surprisals.csv
+2025-05-27 01:22:10,795 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_surprisals.csv
+2025-05-27 01:22:10,795 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:10,795 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_surprisals.csv
+2025-05-27 01:22:10,795 - llm_entropy.validator - INFO -   - Size: 2782 bytes
+2025-05-27 01:22:10,795 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/control/data
+2025-05-27 01:22:10,795 - llm_entropy.results - INFO - Saved layer_surprisals data to analysis_outputs/run_20250527_012133_901dd60b/control/data/bert_layer_surprisals.csv
+2025-05-27 01:22:10,795 - llm_entropy.results - INFO - Generating plot for layer_entropies
+2025-05-27 01:22:11,560 - llm_entropy.results - INFO - Successfully generated plot for layer_entropies
+2025-05-27 01:22:11,560 - llm_entropy.results - INFO - Generating plot for layer_perplexities
+2025-05-27 01:22:12,307 - llm_entropy.results - INFO - Successfully generated plot for layer_perplexities
+2025-05-27 01:22:12,307 - llm_entropy.results - INFO - Generating plot for layer_margins
+2025-05-27 01:22:13,038 - llm_entropy.results - INFO - Successfully generated plot for layer_margins
+2025-05-27 01:22:13,038 - llm_entropy.results - INFO - Generating plot for layer_kl_divs
+2025-05-27 01:22:13,800 - llm_entropy.results - INFO - Successfully generated plot for layer_kl_divs
+2025-05-27 01:22:13,800 - llm_entropy.results - INFO - Generating plot for layer_attn_entropies
+2025-05-27 01:22:13,811 - llm_entropy.results - WARNING - Could not generate plot for layer_attn_entropies: Failed to compute statistics: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+2025-05-27 01:22:13,811 - llm_entropy.results - INFO - Generating plot for layer_surprisals
+2025-05-27 01:22:14,670 - llm_entropy.results - INFO - Successfully generated plot for layer_surprisals
+2025-05-27 01:22:14,671 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_entropies_comparative.csv
+2025-05-27 01:22:14,672 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_entropies_comparative.csv
+2025-05-27 01:22:14,672 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_entropies_comparative.csv
+2025-05-27 01:22:14,672 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:14,672 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_entropies_comparative.csv
+2025-05-27 01:22:14,673 - llm_entropy.validator - INFO -   - Size: 7825 bytes
+2025-05-27 01:22:14,673 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:14,673 - llm_entropy.results - INFO - Saved comparative data for layer_entropies
+2025-05-27 01:22:15,555 - llm_entropy.results - INFO - Generated comparison plot for layer_entropies
+2025-05-27 01:22:15,555 - llm_entropy.results - ERROR - Failed to generate plots for layer_entropies: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:15,556 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_perplexities_comparative.csv
+2025-05-27 01:22:15,557 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_perplexities_comparative.csv
+2025-05-27 01:22:15,557 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_perplexities_comparative.csv
+2025-05-27 01:22:15,557 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:15,557 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_perplexities_comparative.csv
+2025-05-27 01:22:15,557 - llm_entropy.validator - INFO -   - Size: 7448 bytes
+2025-05-27 01:22:15,557 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:15,558 - llm_entropy.results - INFO - Saved comparative data for layer_perplexities
+2025-05-27 01:22:16,283 - llm_entropy.results - INFO - Generated comparison plot for layer_perplexities
+2025-05-27 01:22:16,283 - llm_entropy.results - ERROR - Failed to generate plots for layer_perplexities: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:16,284 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_margins_comparative.csv
+2025-05-27 01:22:16,285 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_margins_comparative.csv
+2025-05-27 01:22:16,285 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_margins_comparative.csv
+2025-05-27 01:22:16,285 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:16,285 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_margins_comparative.csv
+2025-05-27 01:22:16,285 - llm_entropy.validator - INFO -   - Size: 7129 bytes
+2025-05-27 01:22:16,285 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:16,286 - llm_entropy.results - INFO - Saved comparative data for layer_margins
+2025-05-27 01:22:17,023 - llm_entropy.results - INFO - Generated comparison plot for layer_margins
+2025-05-27 01:22:17,024 - llm_entropy.results - ERROR - Failed to generate plots for layer_margins: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:17,024 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_kl_divs_comparative.csv
+2025-05-27 01:22:17,025 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_kl_divs_comparative.csv
+2025-05-27 01:22:17,025 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_kl_divs_comparative.csv
+2025-05-27 01:22:17,025 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:17,025 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_kl_divs_comparative.csv
+2025-05-27 01:22:17,025 - llm_entropy.validator - INFO -   - Size: 7300 bytes
+2025-05-27 01:22:17,025 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:17,025 - llm_entropy.results - INFO - Saved comparative data for layer_kl_divs
+2025-05-27 01:22:17,787 - llm_entropy.results - INFO - Generated comparison plot for layer_kl_divs
+2025-05-27 01:22:17,788 - llm_entropy.results - ERROR - Failed to generate plots for layer_kl_divs: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:17,788 - llm_entropy.results - WARNING - No valid comparison pairs for layer_attn_entropies
+2025-05-27 01:22:17,788 - llm_entropy.validator - INFO - Starting saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_surprisals_comparative.csv
+2025-05-27 01:22:17,789 - llm_entropy.validator - INFO - Completed saving metric data: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_surprisals_comparative.csv
+2025-05-27 01:22:17,789 - llm_entropy.validator - INFO - Starting validation of file: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_surprisals_comparative.csv
+2025-05-27 01:22:17,789 - llm_entropy.validator - INFO - ✓ File validated successfully:
+2025-05-27 01:22:17,789 - llm_entropy.validator - INFO -   - Path: analysis_outputs/run_20250527_012133_901dd60b/comparative/data/bert_layer_surprisals_comparative.csv
+2025-05-27 01:22:17,789 - llm_entropy.validator - INFO -   - Size: 7222 bytes
+2025-05-27 01:22:17,790 - llm_entropy.validator - INFO -   - Directory: analysis_outputs/run_20250527_012133_901dd60b/comparative/data
+2025-05-27 01:22:17,790 - llm_entropy.results - INFO - Saved comparative data for layer_surprisals
+2025-05-27 01:22:18,546 - llm_entropy.results - INFO - Generated comparison plot for layer_surprisals
+2025-05-27 01:22:18,547 - llm_entropy.results - ERROR - Failed to generate plots for layer_surprisals: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-05-27 01:22:18,548 - llm_entropy.results - INFO - Saved comparative predictions to analysis_outputs/run_20250527_012133_901dd60b/comparative/predictions/bert_comparative_predictions.csv
+2025-05-27 01:22:18,549 - llm_entropy.analysis - INFO - Analysis run 20250527_012133_901dd60b completed successfully
