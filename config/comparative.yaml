@@ -1,0 +1,39 @@
+analysis:
+  num_sentences: 10
+  temperature: 1.0
+  use_sampling: true
+  compare_control: true  # Enable comparative mode
+  control:
+    enabled: true
+    layer_weights:
+      - 1.0  # Layer 1
+      - 1.2  # Layer 2
+      - 1.4  # Layer 3
+      - 1.6  # Layer 4
+      - 1.8  # Layer 5
+      - 2.0  # Layer 6
+      - 2.0  # Layer 7
+      - 1.8  # Layer 8
+      - 1.6  # Layer 9
+      - 1.4  # Layer 10
+      - 1.2  # Layer 11
+      - 1.0  # Layer 12
+    token_weights:
+      - 1.0  # Start token
+      - 1.5  # Early tokens
+      - 2.0  # Middle tokens
+      - 2.5  # Late tokens
+      - 3.0  # End token
+    control_vectors:
+      positive:
+        - 2.0   # Base influence
+        - 2.5   # Medium influence
+        - 3.0   # Strong influence
+        - 3.5   # Very strong influence
+        - 4.0   # Maximum influence
+      negative:
+        - -2.0  # Base influence
+        - -2.5  # Medium influence
+        - -3.0  # Strong influence
+        - -3.5  # Very strong influence
+        - -4.0  # Maximum influence

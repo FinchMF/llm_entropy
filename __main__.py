@@ -20,12 +20,20 @@ def main():
     # Load config
     config = load_config(args.config)
     
-    # Command line args override config file
     run_params = {
-        'num_sentences': args.num_sentences or config.analysis.num_sentences,
-        'temperature': args.temperature or config.analysis.temperature,
-        'use_sampling': args.use_sampling or config.analysis.use_sampling
+        'num_sentences': config.analysis.num_sentences,
+        'temperature': config.analysis.temperature,
+        'use_sampling': config.analysis.use_sampling,
+        'compare_control': config.analysis.compare_control
     }
+    
+    # Add control parameters if enabled
+    if hasattr(config, 'control_tensors'):
+        run_params.update({
+            'control_vector': config.control_tensors['control_vector'],
+            'layer_weights': config.control_tensors['layer_weights'],
+            'token_weights': config.control_tensors['token_weights']
+        })
     
     run_analysis(**run_params)
 

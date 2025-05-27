@@ -19,7 +19,7 @@ Typical usage example:
 import torch
 import torch.nn.functional as F
 import numpy as np
-from typing import List, Tuple, Dict, Union
+from typing import List, Tuple, Dict, Union, Callable, Optional
 
 def compute_entropy(logits: torch.Tensor) -> torch.Tensor:
     """Compute Shannon entropy of probability distribution from logits.
@@ -159,3 +159,74 @@ def multiple_token_probability_trajectories(
             trajectories[token_id].append(probs[0, -1, token_id].item())
     
     return trajectories
+
+def compute_control_vector(
+    base_activations: torch.Tensor,
+    target_activations: torch.Tensor,
+    alpha: float = 1.0
+) -> torch.Tensor:
+    """Compute control vector from base and target activations.
+    
+    Args:
+        base_activations: Base hidden states [batch, seq_len, hidden_dim]
+        target_activations: Target hidden states [batch, seq_len, hidden_dim]
+        alpha: Scaling factor for control vector
+        
+    Returns:
+        Control vector with same shape as activations
+    """
+    return alpha * (target_activations - base_activations)
+
+def apply_control_vector(
+    hidden_states: torch.Tensor,
+    control_vector: torch.Tensor,
+    layer_weights: Optional[torch.Tensor] = None,
+    token_weights: Optional[torch.Tensor] = None
+) -> torch.Tensor:
+    """Apply control vector to hidden states with optional layer/token weighting."""
+    # Ensure control vector matches hidden dimension
+    if control_vector.dim() == 1:
+        # Expand to match batch and sequence dimensions
+        control_vector = control_vector.view(1, 1, -1).expand_as(hidden_states)
+    elif control_vector.dim() != hidden_states.dim():
+        raise ValueError(f"Control vector dimension ({control_vector.dim()}) must match "
+                       f"hidden states dimension ({hidden_states.dim()})")
+    
+    if control_vector.size(-1) != hidden_states.size(-1):
+        raise ValueError(f"Control vector hidden size ({control_vector.size(-1)}) must match "
+                       f"model hidden size ({hidden_states.size(-1)})")
+    
+    # Apply weights if provided
+    if layer_weights is not None:
+        control_vector = control_vector * layer_weights.view(-1, 1, 1)
+    # Handle token weights
+    if token_weights is not None:
+        seq_len = hidden_states.size(1)
+        if len(token_weights) != seq_len:
+            # Interpolate token weights to match sequence length
+            token_weights = torch.nn.functional.interpolate(
+                token_weights.view(1, 1, -1),
+                size=seq_len,
+                mode='linear',
+                align_corners=False
+            ).squeeze()
+        control_vector = control_vector * token_weights.view(1, -1, 1)
+    
+    return hidden_states + control_vector
+
+def estimate_control_vector_impact(
+    original_outputs: torch.Tensor,
+    controlled_outputs: torch.Tensor,
+    metric_fn: Callable
+) -> torch.Tensor:
+    """Estimate impact of control vector through a metric.
+    
+    Args:
+        original_outputs: Original model outputs
+        controlled_outputs: Outputs with control vector
+        metric_fn: Metric function to compare outputs
+        
+    Returns:
+        Impact score
+    """
+    return metric_fn(controlled_outputs) - metric_fn(original_outputs)

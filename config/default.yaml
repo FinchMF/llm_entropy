@@ -3,6 +3,10 @@ analysis:
   num_sentences: 10
   temperature: 1.0
   use_sampling: false
+  control:
+    enabled: false
+    layer_weights: null  # Set to array of weights per layer if needed
+    token_weights: null  # Set to array of weights per token if needed
 
 # Model parameters
 models:

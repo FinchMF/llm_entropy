@@ -13,6 +13,7 @@ Typical usage example:
 
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
 def plot_entropy_curves(results, title, output_path):
     """Plots layer-wise entropy curves for multiple sequences.
@@ -85,31 +86,35 @@ def plot_token_prob_trajectory(trajectories, title, output_path):
     plt.close()
 
 def save_predictions_to_csv(results, output_path):
-    """Saves model predictions to a CSV file.
-    
-    Args:
-        results (list): List of tuples, each containing:
-            - sentence (str): The input sentence
-            - predictions (list): List of (token, probability) tuples
-        output_path (str): Path where the CSV file will be saved.
-    
-    Returns:
-        None
-    
-    Note:
-        Creates a CSV file with columns:
-        - Sentence: The input sentence
-        - Token: The predicted token
-        - Probability: The prediction probability
-    """
+    """Saves model predictions to a CSV file with support for comparative results."""
+    if not results:
+        return False
+        
     data = []
     for sentence, predictions in results:
-        # Predictions is now treated as a list directly
-        for token, prob in predictions:
-            data.append({
-                "Sentence": sentence,
-                "Token": token,
-                "Probability": prob
-            })
-    df = pd.DataFrame(data)
-    df.to_csv(output_path, index=False)
+        # Extract analysis type from sentence if present
+        analysis_type = "standard"
+        if " (base)" in sentence:
+            analysis_type = "base"
+            sentence = sentence.replace(" (base)", "")
+        elif " (control)" in sentence:
+            analysis_type = "control"
+            sentence = sentence.replace(" (control)", "")
+            
+        # Handle predictions in standard dict format
+        if isinstance(predictions, list):
+            for pred in predictions:
+                if isinstance(pred, dict) and 'token' in pred and 'probability' in pred:
+                    data.append({
+                        "Sentence": sentence,
+                        "Token": str(pred['token']),
+                        "Probability": float(pred['probability']),
+                        "Analysis": analysis_type
+                    })
+                    
+    if data:
+        df = pd.DataFrame(data)
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        df.to_csv(output_path, index=False)
+        return True
+    return False
